@@ -6,11 +6,11 @@ import Header from './Components/Header/Header'
 
 function App() {
   return (
-    <>
+    <div className='custom-scroll'>
       <Header />
       <Body />
       <ToastContainer theme='dark' />
-    </>
+    </div>
   )
 }
 
