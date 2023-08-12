@@ -1,0 +1,142 @@
+.resume-form {
+    margin: 30px 0;
+    width: 850px;
+    min-height: 550px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+.resume-form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.resume-form-header>div {
+    font-size: 1.1rem;
+    cursor: pointer;
+    letter-spacing: .7px;
+    transition: all 0.25s ease-in;
+}
+
+.resume-form-header>div:hover {
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: var(--spanColor);
+    color: transparent;
+    transform: translateY(-2px);
+}
+
+.resume-form-header .active {
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: var(--spanColor);
+    color: transparent;
+    transform: skew(-10deg);
+    border-bottom: 3px solid rgb(0, 128, 255);
+}
+
+.Editor {
+    margin: 20px 0;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.detail .row {
+    display: flex;
+    gap: 20px;
+}
+
+.detail .row>div {
+    flex: 1;
+}
+
+.detail .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chips {
+    display: flex;
+    align-items: center;
+    gap: .9375rem;
+}
+
+.chip {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .4375rem;
+    border-radius: 14px;
+    padding: 4px 6px;
+    background: var(--spanColor);
+    transition: all 5.45s;
+}
+
+.chip:hover {
+    background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.chip svg {
+    font-size: small;
+    cursor: pointer;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 925px) {
+    .resume-form {
+        width: 650px;
+    }
+
+    .resume-form-header {
+        overflow: auto;
+        text-align: center;
+        gap: 20px;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .resume-form {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .resume-form {
+        width: 450px;
+        border-radius: 30px;
+    }
+
+    .detail .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .resume-form {
+        width: 390px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .resume-form {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .resume-form {
+        width: 290px;
+    }
+}

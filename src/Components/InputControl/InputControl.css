@@ -1,0 +1,35 @@
+.inputControl {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.inputControl input {
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 1rem;
+}
+
+.inputControl input:hover {
+    border: 2px solid rgb(0, 128, 255);
+}
+
+.inputControl input:focus {
+    border: 2.5px solid rgb(17, 135, 252);
+    outline: none;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    font-style: italic;
+}
+
+.inputControl input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
