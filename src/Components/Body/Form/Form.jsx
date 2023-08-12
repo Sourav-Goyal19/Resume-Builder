@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './Form.css'
 import { toast } from 'react-toastify';
 import { ImCross } from 'react-icons/im'
 import { InputControl } from '../../InputControl/InputControl'
 
 const Form = (props) => {
+    const markerRef = useRef();
     const sections = props.sections;
     const resumeInformation = props.resumeInformation;
     const setResumeInformation = props.setResumeInformation;
@@ -508,6 +509,11 @@ const Form = (props) => {
         }
     };
 
+    function indicator(e) {
+        markerRef.current.style.left = e.offsetLeft + 'px';
+        markerRef.current.style.width = e.offsetWidth + 'px';
+    }
+
     useEffect(() => {
         console.log(resumeInformation);
     }, [resumeInformation]);
@@ -520,8 +526,9 @@ const Form = (props) => {
         }} className='resume-form'>
             <div className="resume-form-mainbody">
                 <div className="resume-form-header custom-scroll">
+                    <span ref={markerRef} id="marker"></span>
                     {Object.keys(sections).map((key) =>
-                        <div className={`section ${activeSection === key ? 'active' : ''}`} onClick={() => setActiveSection(key)} key={key}>{sections[key]}</div>
+                        <div className={`section ${activeSection === key ? 'active' : ''}`} onMouseEnter={(e) => { setActiveSection(key), indicator(e.target) }} key={key}>{sections[key]}</div>
                     )}
                 </div>
                 <hr style={{ margin: '5px 0' }} />

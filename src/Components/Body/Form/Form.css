@@ -9,9 +9,22 @@
 
 .resume-form-header {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     padding: 5px 0;
+}
+
+#marker {
+    display: block;
+    position: absolute;
+    border-bottom: 3px solid #0080ff;
+    width: 0;
+    left: 0;
+    bottom: 5px;
+    height: 4px;
+    border-radius: 3px;
+    transition: 0.3s;
 }
 
 .resume-form-header>div {
@@ -35,7 +48,6 @@
     background-image: var(--spanColor);
     color: transparent;
     transform: skew(-10deg);
-    border-bottom: 3px solid rgb(0, 128, 255);
 }
 
 .Editor {
