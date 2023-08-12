@@ -10,7 +10,7 @@ Welcome to the Awesome Resume Builder, a powerful and user-friendly tool that em
 - [Bug Reports and Feature Requests](#bug-reports-and-feature-requests)
 
 ## Visit My Website
-Feel free to visit my personal website [here](https://resume-builder-reactjs.vercel.app) to learn more about me and my work. The link will open in a new tab.
+Feel free to visit my personal website <a href"https://resume-builder-reactjs.vercel.app">here</a> to learn more about me and my work. The link will open in a new tab.
 
 ## About
 The Awesome Resume Builder is designed to streamline the process of resume creation. Whether you're a job seeker, a freelancer, or anyone looking to present their professional profile, our application provides an intuitive interface that allows you to build a visually appealing and comprehensive resume in no time.
