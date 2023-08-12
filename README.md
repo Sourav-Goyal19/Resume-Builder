@@ -4,13 +4,15 @@ Welcome to the Awesome Resume Builder, a powerful and user-friendly tool that em
 
 ## Table of Contents
 
+- [Visit My Website](#visit-my-website)
 - [About](#about)
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [Bug Reports and Feature Requests](#bug-reports-and-feature-requests)
-- [Meet the Team](#meet-the-team)
-- [License](#license)
+
+## Visit My Website
+Feel free to visit my personal website [here](https://resume-builder-reactjs.vercel.app){:target="_blank"} to learn more about me and my work. The link will open in a new tab.
 
 ## About
 The Awesome Resume Builder is designed to streamline the process of resume creation. Whether you're a job seeker, a freelancer, or anyone looking to present their professional profile, our application provides an intuitive interface that allows you to build a visually appealing and comprehensive resume in no time.
@@ -32,15 +34,3 @@ We welcome contributions from the community to help us enhance and improve the A
 
 ## Bug Reports and Feature Requests
 If you encounter any issues or have ideas for new features, we encourage you to share them with us. File a bug report or submit a feature request using the [New Issues](#new-issues) page.
-
-## Meet the Team
-We're a group of dedicated individuals who are passionate about creating tools that empower professionals. Meet our core contributors and learn more about their contributions to the Awesome Resume Builder.
-
-## License
-This project is licensed under the [MIT License](LICENSE), which means you're free to use, modify, and distribute the application for both personal and commercial purposes.
-
----
-
-Thank you for choosing the Awesome Resume Builder to create your professional resume. We're committed to helping you put your best foot forward in your career journey. If you have any questions or feedback, don't hesitate to reach out. Happy resume building!
-
-Last updated: 2023-08-12
