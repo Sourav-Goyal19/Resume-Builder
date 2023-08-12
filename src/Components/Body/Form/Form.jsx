@@ -517,9 +517,9 @@ const Form = (props) => {
             if (e.keyCode === 13) {
                 updateResume();
             }
-        }} className='resume-form custom-scroll'>
+        }} className='resume-form'>
             <div className="resume-form-mainbody">
-                <div className="resume-form-header">
+                <div className="resume-form-header custom-scroll">
                     {Object.keys(sections).map((key) =>
                         <div className={`section ${activeSection === key ? 'active' : ''}`} onClick={() => setActiveSection(key)} key={key}>{sections[key]}</div>
                     )}
