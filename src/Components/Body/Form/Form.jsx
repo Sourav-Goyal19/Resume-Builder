@@ -88,6 +88,7 @@ const Form = (props) => {
                 <InputControl value={basicInfoData.email} onChange={(e) => { setBasicInfoData((prev) => ({ ...prev, email: e.target.value })) }} label="Email" placeholder="Enter your email" />
                 <InputControl value={basicInfoData.number} onChange={(e) => { setBasicInfoData((prev) => ({ ...prev, number: e.target.value })) }}
                     label="Enter phone"
+                    type="number"
                     placeholder="Enter your phone number"
                 />
             </div>
