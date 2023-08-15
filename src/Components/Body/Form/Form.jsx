@@ -520,11 +520,7 @@ const Form = (props) => {
     }, [resumeInformation]);
 
     return (
-        <div onKeyDown={(e) => {
-            if (e.keyCode === 13) {
-                updateResume();
-            }
-        }} className='resume-form'>
+        <div className='resume-form'>
             <div className="resume-form-mainbody">
                 <div className="resume-form-header custom-scroll">
                     <span ref={markerRef} id="marker"></span>
