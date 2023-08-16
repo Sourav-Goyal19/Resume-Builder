@@ -6,6 +6,7 @@ import { InputControl } from '../../InputControl/InputControl'
 
 const Form = (props) => {
     const markerRef = useRef();
+    const btnRef = useRef();
     const sections = props.sections;
     const resumeInformation = props.resumeInformation;
     const setResumeInformation = props.setResumeInformation;
@@ -520,7 +521,11 @@ const Form = (props) => {
     }, [resumeInformation]);
 
     return (
-        <div className='resume-form'>
+        <div onKeyDown={(e) => {
+            if (e.keyCode === 13) {
+                btnRef.current.click();
+            }
+        }} className='resume-form'>
             <div className="resume-form-mainbody">
                 <div className="resume-form-header custom-scroll">
                     <span ref={markerRef} id="marker"></span>
@@ -532,7 +537,7 @@ const Form = (props) => {
                 <div className='Editor'>
                     {generateBody(props.activeSection)}
                 </div>
-                <button onClick={() => {
+                <button ref={btnRef} onClick={() => {
                     if (updatingState && activeSection === 'workExp') {
                         updateWorkExp()
                     }
